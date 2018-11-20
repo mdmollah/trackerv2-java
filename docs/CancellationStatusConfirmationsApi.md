@@ -18,8 +18,8 @@ This call informs the tracker about the updated status of a given payment
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.CancellationStatusConfirmationsApi;
+//import com.swift.ApiException;
+//import com.swift.api.CancellationStatusConfirmationsApi;
 
 
 CancellationStatusConfirmationsApi apiInstance = new CancellationStatusConfirmationsApi();

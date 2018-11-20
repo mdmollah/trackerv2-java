@@ -18,8 +18,8 @@ This API is a delta query to get all payment update information starting from a 
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.GetChangedPaymentTransactionsApi;
+//import com.swift.ApiException;
+//import com.swift.api.GetChangedPaymentTransactionsApi;
 
 
 GetChangedPaymentTransactionsApi apiInstance = new GetChangedPaymentTransactionsApi();

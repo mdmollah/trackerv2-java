@@ -18,8 +18,8 @@ This API is a payment events&#39; query to get invalid events for payment transa
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.GetInvalidEventsApi;
+//import com.swift.ApiException;
+//import com.swift.api.GetInvalidEventsApi;
 
 
 GetInvalidEventsApi apiInstance = new GetInvalidEventsApi();

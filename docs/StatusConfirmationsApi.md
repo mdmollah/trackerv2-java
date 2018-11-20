@@ -18,8 +18,8 @@ This API is a status confirmation update to inform the tracker about the updated
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.StatusConfirmationsApi;
+//import com.swift.ApiException;
+//import com.swift.api.StatusConfirmationsApi;
 
 
 StatusConfirmationsApi apiInstance = new StatusConfirmationsApi();

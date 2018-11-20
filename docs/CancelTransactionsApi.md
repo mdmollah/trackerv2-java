@@ -18,8 +18,8 @@ This API informs the tracker about the cancellation of a given transaction
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.CancelTransactionsApi;
+//import com.swift.ApiException;
+//import com.swift.api.CancelTransactionsApi;
 
 
 CancelTransactionsApi apiInstance = new CancelTransactionsApi();

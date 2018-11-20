@@ -18,8 +18,8 @@ This API is a payment query to get detailed information regarding a given paymen
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.GetPaymentTransactionDetailsApi;
+//import com.swift.ApiException;
+//import com.swift.api.GetPaymentTransactionDetailsApi;
 
 
 GetPaymentTransactionDetailsApi apiInstance = new GetPaymentTransactionDetailsApi();
