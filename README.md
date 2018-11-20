@@ -1,4 +1,6 @@
 # gpi2-java-client
+# swagger-java-client [![Build Status](https://travis-ci.com/mdmollah/gpi2-java-client.svg?branch=master)](https://travis-ci.com/mdmollah/gpi2-java-client)
+
 
 ## Requirements
 
