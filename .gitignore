@@ -2,7 +2,11 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
+.settings
+.swagger-codegen
+.classpath
+.project
+..swagger-codegen-ignore
 # Package Files #
 *.jar
 *.war
