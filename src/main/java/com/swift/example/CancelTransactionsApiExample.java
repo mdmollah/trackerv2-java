@@ -1,10 +1,9 @@
 package com.swift.example;
 
-import com.swift.*;
-
-import com.swift.model.*;
-import com.swift.api.CancelTransactionsApi;
-
+import com.swift.ApiException;
+import com.swift.api.GetPaymentTransactionDetailsApi;
+import com.swift.model.CamtA0600102;
+import com.swift.model.CamtA0600202;
 
 public class CancelTransactionsApiExample {
 
@@ -27,7 +26,7 @@ public class CancelTransactionsApiExample {
             System.err.println("Exception when calling CancelTransactionsApi#cancelTransactionsPost");
             e.printStackTrace();
         }
-    
+
 	}
 
 }

@@ -83,7 +83,7 @@ if(hasProperty('target') && target == 'android') {
 
     install {
         repositories.mavenInstaller {
-            pom.artifactId = 'gpi2-java-client'
+            pom.artifactId = 'trackerv2-java'
         }
     }
 

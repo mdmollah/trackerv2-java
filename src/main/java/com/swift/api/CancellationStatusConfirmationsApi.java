@@ -131,52 +131,52 @@ public class CancellationStatusConfirmationsApi {
 
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call cancellationStatusConfirmationsPostValidateBeforeCall(String laUApplicationID, String laUVersion, String laUCallTime, String laURequestNonce, String laUSigned, String laUSignature, Boolean signatureRequired, String xApiKey, CamtA0700102 requestBody, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
+
         // verify the required parameter 'laUApplicationID' is set
         if (laUApplicationID == null) {
             throw new ApiException("Missing the required parameter 'laUApplicationID' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
         // verify the required parameter 'laUVersion' is set
         if (laUVersion == null) {
             throw new ApiException("Missing the required parameter 'laUVersion' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
         // verify the required parameter 'laUCallTime' is set
         if (laUCallTime == null) {
             throw new ApiException("Missing the required parameter 'laUCallTime' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
         // verify the required parameter 'laURequestNonce' is set
         if (laURequestNonce == null) {
             throw new ApiException("Missing the required parameter 'laURequestNonce' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
         // verify the required parameter 'laUSigned' is set
         if (laUSigned == null) {
             throw new ApiException("Missing the required parameter 'laUSigned' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
         // verify the required parameter 'laUSignature' is set
         if (laUSignature == null) {
             throw new ApiException("Missing the required parameter 'laUSignature' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
         // verify the required parameter 'signatureRequired' is set
         if (signatureRequired == null) {
             throw new ApiException("Missing the required parameter 'signatureRequired' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
         // verify the required parameter 'xApiKey' is set
         if (xApiKey == null) {
             throw new ApiException("Missing the required parameter 'xApiKey' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
         // verify the required parameter 'requestBody' is set
         if (requestBody == null) {
             throw new ApiException("Missing the required parameter 'requestBody' when calling cancellationStatusConfirmationsPost(Async)");
         }
-        
+
 
         com.squareup.okhttp.Call call = cancellationStatusConfirmationsPostCall(laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, signatureRequired, xApiKey, requestBody, progressListener, progressRequestListener);
         return call;

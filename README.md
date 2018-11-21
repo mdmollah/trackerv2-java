@@ -1,4 +1,4 @@
-# gpi2-java-client [![Build Status](https://travis-ci.com/mdmollah/gpi2-java-client.svg?branch=master)](https://travis-ci.com/mdmollah/gpi2-java-client)
+# trackerv2-java [![Build Status](https://travis-ci.com/mdmollah/trackerv2-java.svg?branch=master)](https://travis-ci.com/mdmollah/trackerv2-java)
 
 
 ## Requirements
@@ -28,7 +28,7 @@ Add this dependency to your project's POM:
 ```xml
 <dependency>
     <groupId>com.swift</groupId>
-    <artifactId>gpi2-java-client</artifactId>
+    <artifactId>trackerv2-java</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
 </dependency>
@@ -39,7 +39,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.swift:gpi2-java-client:1.0.0"
+compile "com.swift:trackerv2-java:1.0.0"
 ```
 
 ### Others
@@ -50,7 +50,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/gpi2-java-client-1.0.0.jar
+* target/trackerv2-java-1.0.0.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -70,7 +70,7 @@ import java.util.*;
 public class CancelTransactionsApiExample {
 
     public static void main(String[] args) {
-        
+
         CancelTransactionsApi apiInstance = new CancelTransactionsApi();
         String laUApplicationID = "001"; // String | ID that identifies the application generationg the API and used by the gpi Connector to retrieve the related LAU keys
         String laUVersion = "1.0"; // String | version of the LAUSigned header. Mandatory. \"1.0\" for this first release
@@ -197,4 +197,3 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 ## Author
 
 Hassan.Mollah@swift.com
-
