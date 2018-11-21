@@ -4,7 +4,6 @@
  *
  */
 
-
 package com.swift.api;
 
 import com.swift.ApiCallback;

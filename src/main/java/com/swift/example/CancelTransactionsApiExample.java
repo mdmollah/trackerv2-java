@@ -1,14 +1,14 @@
 package com.swift.example;
 
 import com.swift.ApiException;
-import com.swift.api.GetPaymentTransactionDetailsApi;
+import com.swift.api.CancelTransactionsApi;
 import com.swift.model.CamtA0600102;
 import com.swift.model.CamtA0600202;
 
 public class CancelTransactionsApiExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		CancelTransactionsApi apiInstance = new CancelTransactionsApi();
         String laUApplicationID = "001"; // String | ID that identifies the application generationg the API and used by the gpi Connector to retrieve the related LAU keys
         String laUVersion = "1.0"; // String | version of the LAUSigned header. Mandatory. \"1.0\" for this first release
