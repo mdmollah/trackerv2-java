@@ -13,12 +13,26 @@
 
 package com.swift.api;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import com.swift.ApiException;
 import com.swift.model.CamtA0600102;
 import com.swift.model.CamtA0600202;
 import com.swift.model.ErrorCode;
+
+import com.swift.ApiResponse;
+
+import com.swift.model.CancelTransactionRequest;
+import com.swift.model.CancellationReason6Code;
+import com.swift.model.CancellationRequestDetails1;
+import com.swift.model.PendingPaymentCancellationReason2Code;
+
 import org.junit.Test;
+import org.junit.Assert;
 import org.junit.Ignore;
+
+import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,7 +45,7 @@ import java.util.Map;
 @Ignore
 public class CancelTransactionsApiTest {
 
-    private final CancelTransactionsApi api = new CancelTransactionsApi();
+  
 
     
     /**
@@ -44,18 +58,33 @@ public class CancelTransactionsApiTest {
      */
     @Test
     public void cancelTransactionsPostTest() throws ApiException {
-        String laUApplicationID = null;
-        String laUVersion = null;
-        String laUCallTime = null;
-        String laURequestNonce = null;
-        String laUSigned = null;
-        String laUSignature = null;
-        Boolean signatureRequired = null;
-        String xApiKey = null;
-        CamtA0600102 requestBody = null;
-        CamtA0600202 response = api.cancelTransactionsPost(laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, signatureRequired, xApiKey, requestBody);
+    	 CancelTransactionsApi api = mock(CancelTransactionsApi.class);
+    	 ApiResponse<CamtA0600202> mock_Response=(ApiResponse<CamtA0600202>)mock(ApiResponse.class);
+		CamtA0600102 requestBody = new CamtA0600102();
+		requestBody.setCancelTransactionRequest(new CancelTransactionRequest());
+		requestBody.getCancelTransactionRequest().setFrom("");
+		requestBody.getCancelTransactionRequest().setBusinessService("");
+		requestBody.getCancelTransactionRequest().setCaseIdentification("");
+		requestBody.getCancelTransactionRequest().setUetr("");
+		requestBody.getCancelTransactionRequest().setOriginalInstructionIdentification("");
+		requestBody.getCancelTransactionRequest().setUnderlyingCancellationDetails(new CancellationRequestDetails1());
+		requestBody.getCancelTransactionRequest().getUnderlyingCancellationDetails()
+				.setCancellationReasonInformation(CancellationReason6Code.AGNT);
+		requestBody.getCancelTransactionRequest().getUnderlyingCancellationDetails()
+				.setIndemnityAgreement(PendingPaymentCancellationReason2Code.INDM);
 
-        // TODO: test validations
+		when(api.cancelTransactionsPostWithHttpInfo("001", "1.0", "2018-03-23T15:56:26.728Z",
+				"e802ab96-bb3a-4965-9139-5214b9f0f074",
+				"(ApplAPIKey=yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B),(RBACRole=[FullViewer/Scope/cclabeb0])",
+				"U1khA8h9Lm1PqzB99fG6uw", true, "", requestBody)).thenReturn(mock_Response);
+
+		Assert.assertEquals(api.cancelTransactionsPostWithHttpInfo("001", "1.0", "2018-03-23T15:56:26.728Z",
+				"e802ab96-bb3a-4965-9139-5214b9f0f074",
+				"(ApplAPIKey=yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B),(RBACRole=[FullViewer/Scope/cclabeb0])",
+				"U1khA8h9Lm1PqzB99fG6uw", true, "", requestBody),mock_Response);
+
+		// Print response
+		
     }
     
 }
