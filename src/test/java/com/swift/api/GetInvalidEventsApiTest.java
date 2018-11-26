@@ -16,10 +16,7 @@ import com.swift.model.CamtA0500103;
 import com.swift.model.CamtA0500203;
 import com.swift.model.GetInvalidEventsRequest;
 
-/**
- * API tests for GetInvalidEventsApi
- */
-@Ignore
+
 public class GetInvalidEventsApiTest {
 
 	ApiResponse<CamtA0500203> mock_ApiResponse=(ApiResponse<CamtA0500203>)mock(ApiResponse.class);
