@@ -1,9 +1,3 @@
-/*
- * gpi API v2
- * Move your app forward with the gpi API
- *
- */
-
 package com.swift.api;
 
 import static org.mockito.Mockito.mock;
@@ -32,23 +26,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * API tests for CancelTransactionsApi
- */
-@Ignore
 public class CancelTransactionsApiTest {
 
-
-
-
-    /**
-     * Cancel Transactions
-     *
-     * This API informs the tracker about the cancellation of a given transaction
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
     @Test
     public void cancelTransactionsPostTest() throws ApiException {
     	 CancelTransactionsApi api = mock(CancelTransactionsApi.class);
