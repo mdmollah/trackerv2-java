@@ -8,7 +8,7 @@ import com.swift.model.CamtA0500203;
 public class GetInvalidEventsApiExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		GetInvalidEventsApi apiInstance = new GetInvalidEventsApi();
 		String laUApplicationID = "001"; // String | ID that identifies the application generationg the API and used by the gpi Connector to retrieve the related LAU keys
 		String laUVersion = "1.0"; // String | version of the LAUSigned header. Mandatory. \"1.0\" for this first release
