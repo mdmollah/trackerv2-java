@@ -1,4 +1,4 @@
-# trackerv2-java [![Build Status](https://travis-ci.org/yinchanted/trackerv2-java.svg?branch=master)](https://travis-ci.org/yinchanted/trackerv2-java)
+# gpi-v2-java [![Build Status](https://travis-ci.org/yinchanted/trackerv2-java.svg?branch=master)](https://travis-ci.org/yinchanted/trackerv2-java)
 
 ## Requirements
 
