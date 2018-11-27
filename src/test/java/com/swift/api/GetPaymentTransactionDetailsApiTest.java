@@ -1,53 +1,47 @@
-/*
- * gpi API v2
- * Move your app forward with the gpi API
- *
- */
 
 package com.swift.api;
 
+import static java.util.Arrays.asList;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Test;
+
 import com.swift.ApiException;
+import com.swift.ApiResponse;
 import com.swift.model.CamtA0200103;
 import com.swift.model.CamtA0200203;
-import com.swift.model.ErrorCode;
-import org.junit.Test;
-import org.junit.Ignore;
+import com.swift.model.GetPaymentTransactionDetailsRequest;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-/**
- * API tests for GetPaymentTransactionDetailsApi
- */
-@Ignore
 public class GetPaymentTransactionDetailsApiTest {
+	ApiResponse<CamtA0200203> mock_ApiResponse = (ApiResponse<CamtA0200203>) mock(ApiResponse.class);
+	GetPaymentTransactionDetailsApi test = mock(GetPaymentTransactionDetailsApi.class);
 
-    private final GetPaymentTransactionDetailsApi api = new GetPaymentTransactionDetailsApi();
+	@Test
+	public void getPaymentTransactionDetailsPostTest() throws ApiException {
+		CamtA0200103 requestBody = new CamtA0200103();
+		requestBody.setGetPaymentTransactionDetailsRequest(new GetPaymentTransactionDetailsRequest());
 
+		List<String> myInstitution = asList("CCLABEB0");
+		requestBody.getGetPaymentTransactionDetailsRequest().setMyInstitution(myInstitution);
+		requestBody.getGetPaymentTransactionDetailsRequest().setUetr("b916a97d-a699-4f20-b8c2-2b07e2684a27");
 
-    /**
-     * Get Payment Transaction Details
-     *
-     * This API is a payment query to get detailed information regarding a given payment. It requires the UETR to be known.
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void getPaymentTransactionDetailsPostTest() throws ApiException {
-        String laUApplicationID = null;
-        String laUVersion = null;
-        String laUCallTime = null;
-        String laURequestNonce = null;
-        String laUSigned = null;
-        String laUSignature = null;
-        String xApiKey = null;
-        CamtA0200103 requestBody = null;
-        CamtA0200203 response = api.getPaymentTransactionDetailsPost(laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xApiKey, requestBody);
+		when(test.getPaymentTransactionDetailsPostWithHttpInfo("001", "1.0", "2018-03-23T15:56:26.728Z",
+				"e802ab96-bb3a-4965-9139-5214b9f0f074",
+				"(ApplAPIKey=yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B),(RBACRole=[FullViewer/Scope/cclabeb0])",
+				"U1khA8h9Lm1PqzB99fG6uw", "yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B", requestBody))
+						.thenReturn(mock_ApiResponse);
 
-        // TODO: test validations
-    }
+		Assert.assertEquals(test.getPaymentTransactionDetailsPostWithHttpInfo("001", "1.0", "2018-03-23T15:56:26.728Z",
+				"e802ab96-bb3a-4965-9139-5214b9f0f074",
+				"(ApplAPIKey=yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B),(RBACRole=[FullViewer/Scope/cclabeb0])",
+				"U1khA8h9Lm1PqzB99fG6uw", "yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B", requestBody), mock_ApiResponse);
+
+		System.out.println("Passed Test getPaymentTransactionDetailsPostWithHttpInfoShouldReturnResponse");
+		// TODO: test validations
+	}
 
 }

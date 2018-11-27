@@ -1,8 +1,3 @@
-/*
- * gpi API v2
- * Move your app forward with the gpi API
- *
- */
 
 package com.swift.api;
 
@@ -11,7 +6,6 @@ import static org.mockito.Mockito.when;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import com.swift.ApiException;
 import com.swift.ApiResponse;
@@ -24,22 +18,9 @@ import com.swift.model.PaymentCancellationRejection3Code;
 import com.swift.model.PendingPaymentCancellationReason1Code;
 import com.swift.model.TransactionCancellationStatusRequest;
 
-/**
- * API tests for CancellationStatusConfirmationsApi
- */
 
 public class CancellationStatusConfirmationsApiTest {
 
-
-
-
-	/**
-	 * Cancellation Status Confirmations
-	 *
-	 * This call informs the tracker about the updated status of a given payment
-	 *
-	 * @throws ApiException if the Api call fails
-	 */
 	@Test
 	public void cancellationStatusConfirmationsPostTest() throws ApiException {
 

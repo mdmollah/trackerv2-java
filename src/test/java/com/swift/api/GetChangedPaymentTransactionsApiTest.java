@@ -1,9 +1,3 @@
-/*
- * gpi API v2
- * Move your app forward with the gpi API
- *
- */
-
 package com.swift.api;
 
 import static java.util.Arrays.asList;
@@ -21,9 +15,6 @@ import com.swift.model.CamtA0400103;
 import com.swift.model.CamtA0400203;
 import com.swift.model.GetChangedPaymentTransactionsRequest;
 
-/**
- * API tests for GetChangedPaymentTransactionsApi
- */
 
 public class GetChangedPaymentTransactionsApiTest {
 
