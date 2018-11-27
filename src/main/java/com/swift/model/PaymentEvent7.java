@@ -1,38 +1,24 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
-
 package com.swift.model;
 
-import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.swift.model.ActiveCurrencyAndAmount;
-import com.swift.model.ActiveOrHistoricCurrencyAndAmount;
-import com.swift.model.ChargeBearerType3Code;
-import com.swift.model.CreditTransferTransactionParties1;
-import com.swift.model.CurrencyExchange8;
-import com.swift.model.CustomerCreditTransferTransactionParties1;
-import com.swift.model.PaymentStatus3;
-import com.swift.model.TrackerEventType1Code;
-import com.swift.model.UnderlyingCancellationDetails2;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import com.google.gson.annotations.SerializedName;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * Contains information coming from the related MT 199 or MT 103, or the StatusConfirmationUpdate.
  */
 @ApiModel(description = "Contains information coming from the related MT 199 or MT 103, or the StatusConfirmationUpdate.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class PaymentEvent7 {
   @SerializedName("network_reference")
   private String networkReference = null;

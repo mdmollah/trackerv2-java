@@ -1,5 +1,5 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */

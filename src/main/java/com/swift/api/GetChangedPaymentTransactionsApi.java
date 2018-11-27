@@ -1,11 +1,19 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
 package com.swift.api;
 
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.google.gson.reflect.TypeToken;
 import com.swift.ApiCallback;
 import com.swift.ApiClient;
 import com.swift.ApiException;
@@ -14,21 +22,8 @@ import com.swift.Configuration;
 import com.swift.Pair;
 import com.swift.ProgressRequestBody;
 import com.swift.ProgressResponseBody;
-
-import com.google.gson.reflect.TypeToken;
-
-import java.io.IOException;
-
-
 import com.swift.model.CamtA0400103;
 import com.swift.model.CamtA0400203;
-import com.swift.model.ErrorCode;
-
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class GetChangedPaymentTransactionsApi {
     private ApiClient apiClient;

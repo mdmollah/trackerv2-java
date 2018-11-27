@@ -1,5 +1,5 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
@@ -9,7 +9,6 @@ package com.swift;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class ApiException extends Exception {
     private int code = 0;
     private Map<String, List<String>> responseHeaders = null;

@@ -1,5 +1,5 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
@@ -7,20 +7,20 @@
 
 package com.swift.model;
 
+import java.io.IOException;
 import java.util.Objects;
+
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
+
 import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 
 /**
  * ErrorCodeStatus
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class ErrorCodeStatus {
   /**
    * Gets or Sets severity

@@ -1,26 +1,10 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
 package com.swift;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParseException;
-import com.google.gson.TypeAdapter;
-import com.google.gson.internal.bind.util.ISO8601Utils;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.google.gson.JsonElement;
-import io.gsonfire.GsonFireBuilder;
-import io.gsonfire.TypeSelector;
-import org.threeten.bp.LocalDate;
-import org.threeten.bp.OffsetDateTime;
-import org.threeten.bp.format.DateTimeFormatter;
-
-import com.swift.model.*;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -30,7 +14,21 @@ import java.text.ParseException;
 import java.text.ParsePosition;
 import java.util.Date;
 import java.util.Map;
-import java.util.HashMap;
+
+import org.threeten.bp.LocalDate;
+import org.threeten.bp.OffsetDateTime;
+import org.threeten.bp.format.DateTimeFormatter;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParseException;
+import com.google.gson.TypeAdapter;
+import com.google.gson.internal.bind.util.ISO8601Utils;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+
+import io.gsonfire.GsonFireBuilder;
 
 public class JSON {
     private Gson gson;

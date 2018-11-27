@@ -1,9 +1,3 @@
-/*
- * gpi API v2
- * Move your app forward with the gpi API
- *
- */
-
 package com.swift.api;
 
 import static java.util.Arrays.asList;

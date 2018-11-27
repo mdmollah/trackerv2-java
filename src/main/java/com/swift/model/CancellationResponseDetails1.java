@@ -1,29 +1,22 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
-
 package com.swift.model;
 
 import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
+
 import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.swift.model.InvestigationExecutionConfirmation5Code;
-import com.swift.model.InvestigationExecutionStatusReason1;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 
 /**
  * Contains detailed information from the cancellation response (e.g. an MT 196 or an MT 199).
  */
 @ApiModel(description = "Contains detailed information from the cancellation response (e.g. an MT 196 or an MT 199).")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class CancellationResponseDetails1 {
   @SerializedName("investigation_execution_status")
   private InvestigationExecutionConfirmation5Code investigationExecutionStatus = null;

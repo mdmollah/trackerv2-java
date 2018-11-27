@@ -1,30 +1,24 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
-
 package com.swift.model;
 
-import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.swift.model.PaymentTransaction76;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import com.google.gson.annotations.SerializedName;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * This API is the response to a delta query to get all payment update information starting from a given date and time. This API allows synchronization of a local database with the tracker database.   All use cases applicable for the get and search of payment transactions apply also for this API.   The use of the API to get the last changed payment transactions is driven by an architectural choice to feed a local database and to optimise the flow between the tracker and the API caller.
  */
 @ApiModel(description = "This API is the response to a delta query to get all payment update information starting from a given date and time. This API allows synchronization of a local database with the tracker database.   All use cases applicable for the get and search of payment transactions apply also for this API.   The use of the API to get the last changed payment transactions is driven by an architectural choice to feed a local database and to optimise the flow between the tracker and the API caller.  ")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class GetChangedPaymentTransactionsResponse {
   @SerializedName("payment_transaction")
   private List<PaymentTransaction76> paymentTransaction = null;

@@ -1,16 +1,13 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
-
 package com.swift.model;
 
-import java.util.Objects;
-import com.google.gson.annotations.SerializedName;
-
 import java.io.IOException;
+
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.stream.JsonReader;

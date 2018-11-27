@@ -1,30 +1,24 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
-
 package com.swift.model;
 
-import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.swift.model.PaymentTransaction72;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import com.google.gson.annotations.SerializedName;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * This API is the response to a payment transaction search to get transaction-level information regarding all payments that match the search criteria.  Examples of use cases are:  • Investigation by a participating institution based on criteria given by a customer, such as instructed amount, time of initiation  • Flow monitoring, for instance to find payments that are \&quot;stuck\&quot; for which the institution is the beneficiary institution  • Feed a dashboard - give all payment transactions with their last status
  */
 @ApiModel(description = "This API is the response to a payment transaction search to get transaction-level information regarding all payments that match the search criteria.  Examples of use cases are:  • Investigation by a participating institution based on criteria given by a customer, such as instructed amount, time of initiation  • Flow monitoring, for instance to find payments that are \"stuck\" for which the institution is the beneficiary institution  • Feed a dashboard - give all payment transactions with their last status  ")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class GetPaymentTransactionsResponse {
   @SerializedName("payment_transaction")
   private List<PaymentTransaction72> paymentTransaction = new ArrayList<PaymentTransaction72>();

@@ -1,9 +1,8 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
-
 
 package com.swift.auth;
 
@@ -12,7 +11,6 @@ import com.swift.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class ApiKeyAuth implements Authentication {
   private final String location;
   private final String paramName;

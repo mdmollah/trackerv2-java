@@ -1,36 +1,24 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
-
 package com.swift.model;
 
-import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.swift.model.ActiveOrHistoricCurrencyAndAmount;
-import com.swift.model.CoverPaymentEvent1;
-import com.swift.model.PaymentEvent2;
-import com.swift.model.PaymentScenario3Code;
-import com.swift.model.PaymentStatus3;
-import com.swift.model.PaymentTransactionCancellationStatus3;
-import com.swift.model.PaymentsPartyType2Code;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import com.google.gson.annotations.SerializedName;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * Contains details on the payment transaction.
  */
 @ApiModel(description = "Contains details on the payment transaction.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class PaymentTransaction72 {
   @SerializedName("uetr")
   private String uetr = null;

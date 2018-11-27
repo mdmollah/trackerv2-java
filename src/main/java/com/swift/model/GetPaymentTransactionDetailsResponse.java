@@ -1,32 +1,24 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
-
 package com.swift.model;
 
-import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.swift.model.PaymentEvent7;
-import com.swift.model.PaymentStatus3;
-import com.swift.model.PaymentTransactionCancellationStatus1;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import com.google.gson.annotations.SerializedName;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * This API is the response to a payment query to get detailed information regarding a given payment transaction.  Examples of use cases are:  • Debtor status check - debtor&#39;s agent or debtor wants to see the status  • Creditor status check - creditor&#39;s agent or creditor wants to see the status
  */
 @ApiModel(description = "This API is the response to a payment query to get detailed information regarding a given payment transaction.  Examples of use cases are:  • Debtor status check - debtor's agent or debtor wants to see the status  • Creditor status check - creditor's agent or creditor wants to see the status  ")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class GetPaymentTransactionDetailsResponse {
   @SerializedName("uetr")
   private String uetr = null;

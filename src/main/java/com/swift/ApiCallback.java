@@ -1,15 +1,13 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
 
 package com.swift;
 
-import java.io.IOException;
-
-import java.util.Map;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Callback for asynchronous API call.

@@ -1,5 +1,5 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
@@ -8,23 +8,16 @@
 package com.swift.model;
 
 import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
+
 import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.swift.model.CancellationRequestDetails1;
-import com.swift.model.CancellationResponseDetails1;
-import com.swift.model.PaymentCancellationStatusReason2Code;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 
 /**
  * Provides details on the status of the cancellation of the underlying payments event.
  */
 @ApiModel(description = "Provides details on the status of the cancellation of the underlying payments event.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class UnderlyingCancellationDetails2 {
   @SerializedName("cancellation_request_details")
   private CancellationRequestDetails1 cancellationRequestDetails = null;

@@ -7,20 +7,16 @@
 package com.swift.model;
 
 import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
+
 import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 
 /**
  * A number of monetary units specified in an active or a historic currency where the unit of currency is explicit and compliant with ISO 4217.
  */
 @ApiModel(description = "A number of monetary units specified in an active or a historic currency where the unit of currency is explicit and compliant with ISO 4217.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class ActiveOrHistoricCurrencyAndAmount {
   @SerializedName("currency")
   private String currency = null;

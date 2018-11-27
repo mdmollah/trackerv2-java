@@ -3,28 +3,17 @@ package com.swift.api;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 import com.swift.ApiException;
+import com.swift.ApiResponse;
 import com.swift.model.CamtA0600102;
 import com.swift.model.CamtA0600202;
-import com.swift.model.ErrorCode;
-
-import com.swift.ApiResponse;
-
 import com.swift.model.CancelTransactionRequest;
 import com.swift.model.CancellationReason6Code;
 import com.swift.model.CancellationRequestDetails1;
 import com.swift.model.PendingPaymentCancellationReason2Code;
-
-import org.junit.Test;
-import org.junit.Assert;
-import org.junit.Ignore;
-
-import static org.junit.Assert.assertEquals;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class CancelTransactionsApiTest {
 

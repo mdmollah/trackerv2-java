@@ -1,5 +1,5 @@
 /*
- * gpi API v2
+ * Tracker API v2
  * Move your app forward with the gpi API
  *
  */
@@ -7,24 +7,19 @@
 
 package com.swift.model;
 
-import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.swift.model.PaymentEvent3;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import com.google.gson.annotations.SerializedName;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * This API is a payment events response to a query to get invalid events for payment transactions within a given time frame. An event is either a payment or a status confirmation.  The API is typically used for support or audit purposes, where all invalid messages sent or received are retrievable by one API call.
  */
 @ApiModel(description = "This API is a payment events response to a query to get invalid events for payment transactions within a given time frame. An event is either a payment or a status confirmation.  The API is typically used for support or audit purposes, where all invalid messages sent or received are retrievable by one API call.  ")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-20T13:44:06.319-05:00")
 public class GetInvalidEventsResponse {
   @SerializedName("event")
   private List<PaymentEvent3> event = new ArrayList<PaymentEvent3>();
